@@ -1,0 +1,53 @@
+$break-tablet: 768px;
+$break-mobile: $break-tablet - 1;
+
+@mixin break-mobile() {
+
+  @media only screen and (max-width: #{$break-tablet - 1}) {
+    @content;
+  }
+}
+
+/**
+ * Utility classes to put specific text-align values.
+ *
+ *   .has-text-align--xs {}
+ *   .has-text-align--xs-mobile {}
+ */
+$mq-text-align-breakpoints: (
+	mobile: $break-mobile
+);
+
+$text-align-properties: (
+	"text-align": "text-align",
+);
+
+$text-aligns: (
+	"--left": left,
+	"--right": right,
+	"--center": center
+);
+
+@mixin text-aligns($text-align-properties, $breakpoint: null) {
+
+	@each $property-namespace, $property in $text-align-properties {
+
+		@each $align-namespace, $align in $text-aligns {
+			.has-#{$property-namespace}#{$align-namespace}#{$breakpoint} {
+				#{$property}: $align !important;
+			}
+		}
+	}
+}
+
+@if (variable-exists(mq-text-align-breakpoints)) {
+
+	@each $bp-name, $bp-value in $mq-text-align-breakpoints {
+		$breakpoint: break-#{$bp-name};
+
+		@include breakpoint("#{$bp-name}") {
+
+			@include text-aligns($text-align-properties, -#{$bp-name});
+		}
+	}
+}
