@@ -78,16 +78,8 @@ class Block_Assets {
 			return;
 		}
 
-		// Styles.
 		$asset   = self::get_asset_metadata( 'index' );
 		$version = $asset['version'];
-
-		wp_enqueue_style(
-			$this->handle_prefix . '-editor',
-			GP_BLOCK_TAM_URL . 'build/index.css',
-			[],
-			$version
-		);
 
 		// Scripts.
 		$dependencies = $asset['dependencies'];
