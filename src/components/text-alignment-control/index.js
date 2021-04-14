@@ -1,8 +1,8 @@
 /**
  * Internal dependencies
  */
+import { ALIGNMENTS } from '../../utils/settings';
 import icons from '../../utils/icons';
-import { ALIGNMENTS } from '../../utils/alignments';
 
 /**
  * WordPress dependencies

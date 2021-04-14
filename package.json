@@ -54,7 +54,7 @@
     "packages-update": "wp-scripts packages-update",
     "prettier:js": "prettier --write",
     "start": "wp-scripts start",
-    "makepot": "wp i18n make-pot . languages/gp-block-text-align-mobile.pot --domain=gp-block-text-align-mobile --package-name='GP Block Spacing' --exclude=node_modules,vendor",
+    "makepot": "wp i18n make-pot . languages/gp-block-text-align-mobile.pot --domain=gp-block-text-align-mobile --package-name='GP Block Text Align Mobile' --exclude=node_modules,vendor",
     "postinstall": "wp-scripts build && composer install"
   }
 }

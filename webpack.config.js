@@ -31,7 +31,7 @@ module.exports = {
 		],
 	},
 	resolve: {
-    ...defaultConfig.resolve,
+		...defaultConfig.resolve,
 	},
 	optimization: {
 		...defaultConfig.optimization,

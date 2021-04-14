@@ -3,9 +3,24 @@ $break-mobile: $break-tablet - 1;
 
 @mixin break-mobile() {
 
-  @media only screen and (max-width: #{$break-tablet - 1}) {
-    @content;
-  }
+	@media only screen and (max-width: #{$break-tablet - 1}) {
+		@content;
+	}
+}
+
+@mixin breakpoint($class) {
+
+	@if $class==mobile {
+
+		@include break-mobile {
+			@content;
+		}
+	}
+
+	@else {
+
+		@warn "Breakpoint mixin supports: mobile";
+	}
 }
 
 /**
