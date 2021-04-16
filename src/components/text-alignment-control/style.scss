@@ -50,6 +50,10 @@ $text-aligns: (
 		@each $align-namespace, $align in $text-aligns {
 			.has-#{$property-namespace}#{$align-namespace}#{$breakpoint} {
 				#{$property}: $align !important;
+
+				&[class*="wp-block-buttons"][class*="align"] {
+					float: none;
+				}
 			}
 		}
 	}
