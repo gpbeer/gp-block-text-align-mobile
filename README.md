@@ -2,7 +2,7 @@
 
 WordPress mobile text align control for any Gutengerg block.
 
-![Alt Text](https://raw.githubusercontent.com/german-pichardo/gp-block-text-align-mobile/main/wp-assets/screenshot.gif)
+![Alt Text](https://github.com/german-pichardo/gp-block-text-align-mobile/raw/main/wp-assets/screenshot.gif)
 
 ## Requirements
 
