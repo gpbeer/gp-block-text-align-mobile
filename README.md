@@ -61,7 +61,7 @@ composer require gp/gp-block-text-align-mobile
 
 <https://make.wordpress.org/core/handbook/best-practices/coding-standards/>
 
-## Add Additional blocks to use custom padding
+## Allow to remove your desired blocks from enqueued blocks
 
 ```JavaScript
 /**
