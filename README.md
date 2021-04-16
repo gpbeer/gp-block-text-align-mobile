@@ -65,9 +65,9 @@ composer require gp/gp-block-text-align-mobile
 
 ```JavaScript
 /**
- * Add custom restricted blocks
+ * Remove blocks filter
  *
- * @param {Array} blocks Available blocks.
+ * @param {Array} blocks Restricted blocks.
  *
  * @return {Array} Filtered blocks array.
  */
