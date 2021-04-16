@@ -1,6 +1,8 @@
 # GP Block Text Align Mobile
 
-WordPress mobile text align control for Gutengerg blocks.
+WordPress mobile text align control for any Gutengerg block.
+
+![Alt Text](https://raw.githubusercontent.com/german-pichardo/gp-block-text-align-mobile/main/wp-assets/screenshot.gif)
 
 ## Requirements
 
